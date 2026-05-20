@@ -4,6 +4,15 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/registry',
+        destination: '/',
+        permanent: false,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
